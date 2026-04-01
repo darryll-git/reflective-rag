@@ -1,0 +1,13 @@
+# Environments
+venv/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Vector DB storage (keeps your repo light)
+chroma_db/
+faiss_index/
+
+sample.pdf
