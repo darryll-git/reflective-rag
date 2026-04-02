@@ -86,7 +86,7 @@ def fact_checker(state: AgentState):
 # 4. Define the Routing Logic
 def route_workflow(state: AgentState):
     # Stop if approved, or if they've argued 3 times (to prevent infinite loops)
-    if state["feedback"].startswith("APPROVE") or state["loop_count"] >= 3:
+    if state["feedback"].startswith("APPROVE") or state["loop_count"] >= 4:
         return END
     else:
         return "researcher"
